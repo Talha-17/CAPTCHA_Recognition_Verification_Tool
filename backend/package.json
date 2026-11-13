@@ -1,0 +1,31 @@
+{
+  "name": "captcha-tool-backend",
+  "version": "1.0.0",
+  "description": "CAPTCHA recognition, synthetic OCR solving, and test verification platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Tests not configured yet\""
+  },
+  "keywords": [
+    "captcha",
+    "ocr",
+    "verification",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.21.1",
+    "cors": "^2.8.6",
+    "csv-parser": "^3.2.1",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "form-data": "^4.0.6",
+    "multer": "^2.5.0",
+    "playwright": "^1.65.0",
+    "sqlite3": "^6.0.1",
+    "tesseract.js": "^7.0.0"
+  }
+}
