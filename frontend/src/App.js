@@ -560,31 +560,31 @@ const handleDetect = async () => {
       >
         <Card
           title="Accuracy"
-          value="80%"
+          value="85%"
           color="#2ecc71"
         />
 
         <Card
           title="Successful"
-          value="16 / 20"
+          value="17 / 20"
           color="#3498db"
         />
 
         <Card
           title="Failed"
-          value="4"
+          value="3"
           color="#e74c3c"
         />
 
         <Card
           title="Avg Confidence"
-          value="76.75%"
+          value="69.75%"
           color="#8e44ad"
         />
 
         <Card
           title="Avg Processing"
-          value="20.6 ms"
+          value="71.6 ms"
           color="#f39c12"
         />
 
@@ -605,7 +605,7 @@ const handleDetect = async () => {
           }}
         >
           <b>Recognition accuracy</b>
-          <b>80%</b>
+          <b>85%</b>
         </div>
 
         <div
@@ -618,7 +618,7 @@ const handleDetect = async () => {
         >
           <div
             style={{
-              width: '80%',
+              width: '85%',
               height: '100%',
               background: '#2ecc71',
               borderRadius: '10px'

@@ -35,7 +35,10 @@ let workerPromise = null;
 async function getWorker() {
   if (!workerPromise) {
     workerPromise = (async () => {
-      const worker = await createWorker('eng');
+      const worker = await createWorker('eng', 1, {
+      langPath: __dirname,
+      gzip: false
+});
 
       await worker.setParameters({
         tessedit_pageseg_mode: PSM.SINGLE_LINE,

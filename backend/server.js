@@ -15,8 +15,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:5173',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173']
+  origin: allowedOrigins
 }));
 
 app.use(express.json({ limit: '10mb' }));
@@ -808,3 +814,4 @@ async function startServer() {
 }
 
 startServer();
+
